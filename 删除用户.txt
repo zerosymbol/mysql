@@ -1,5 +1,4 @@
-#删除用户命令
-
-DROP USER ¡®username¡¯@'host¡¯;
+﻿#删除用户命令
+DROP USER ‘username’@'host’;
 
 
