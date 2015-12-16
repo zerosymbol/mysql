@@ -1,0 +1,5 @@
+#É¾³ıÓÃ»§ÃüÁî:
+
+DROP USER ¡®username¡¯@'host¡¯;
+
+
