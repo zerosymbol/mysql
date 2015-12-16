@@ -1,5 +1,5 @@
-#É¾³ıÓÃ»§ÃüÁî:
+#åˆ é™¤ç”¨æˆ·å‘½ä»¤
 
-DROP USER ¡®username¡¯@'host¡¯;
+DROP USER Â¡Â®usernameÂ¡Â¯@'hostÂ¡Â¯;
 
 
