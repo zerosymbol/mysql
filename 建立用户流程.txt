@@ -1,0 +1,23 @@
+一个典型的数据库建表, 建用户过程
+
+#创建用于localhost连接的用户并指定密码 
+mysql> create user 'pcom'@'localhost' identified by 'aaa7B2249'; 
+Query OK, 0 rows affected (0.00 sec) 
+      
+#创建数据库 
+mysql> create database pcom default character set utf8 collate utf8_bin; 
+Query OK, 1 row affected (0.00 sec) 
+      
+#给本地用户授权, 这里不需要指定密码 
+mysql> grant all on pcom.* to 'pcom'@'localhost'; 
+Query OK, 0 rows affected (0.00 sec) 
+      
+#给其他IP地址下的用户授权, 注意: 这里必须指定密码, 否则就可以无密码访问 
+mysql> grant all on pcom.* to 'pcom'@'192.168.0.0/255.255.0.0' identified by 'aaa7B2249'; 
+Query OK, 0 rows affected (0.00 sec) 
+      
+同理 
+mysql> grant all on pcom.* to 'pcom'@'172.20.0.0/255.255.0.0' identified by 'aaa7B2249'; 
+Query OK, 0 rows affected (0.00 sec) 
+      
+Done!
